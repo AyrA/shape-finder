@@ -10,9 +10,6 @@ const METADATA = {
 	doesNotAffectSavegame: true
 };
 
-// Need to add this to the readme file:
-// <a href="https://www.flaticon.com/free-icons/magnifying-glass" title="magnifying glass icons">Magnifying glass icons created by Freepik - Flaticon</a>
-
 class Mod extends shapez.Mod {
 	init() {
 		const self = this;
