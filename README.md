@@ -20,6 +20,9 @@ In the box, set your desired values and begin the search.
 If the search is successful, the camera will be automatically centered and zoomed at the node.
 If the search fails, a message is displayed instead.
 
+The dialog will remember your choices during the current game session.
+This makes repeated search for rare nodes easier for you.
+
 ### Shape declaration
 
 Default value: *None*
@@ -32,9 +35,10 @@ Enter the shape using the 4 shape letter codes:
 - `W` Windmill
 
 The shape declaration starts at the top right piece and goes clockwise.
-It is case insensitive.
+It is case insensitive. This is basically the standard shape declaration syntax from the game,
+but simply without color since all nodes are uncolored by default.
 
-Additionally, you can use a dash (`-`) for positions you don't care about.
+Additionally, the dash (`-`) which normally stands for "empty" can be used for positions you don't care about.
 `W-W-` for example finds any shape that has two windmill pieces in opposite corners.
 
 ### Search radius
@@ -44,7 +48,7 @@ Default value: **500**
 Defines the radius in which to search for the shape.
 Radius in this case is a bit of a generous term.
 Entering 50 means the search begins 50 tiles to the left and 50 tiles up,
-and ends 50 tiles to the right and 50 times down.
+and ends 50 tiles to the right and 50 tiles down.
 In other words, it's a square with side length `radius × 2 + 1` that's centered around your camera.
 
 **CAUTION!** Going above 1000 radius can severely lag the game.
